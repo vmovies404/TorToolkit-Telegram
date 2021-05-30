@@ -29,7 +29,7 @@ if __name__ == "__main__":
         queue.put_nowait(i)
 
     # Telethon client creation
-    ttkbot = TortkClient("TorToolkitBot",get_val("API_ID"),get_val("API_HASH"))
+    ttkbot = TortkClient("V Torrent",get_val("API_ID"),get_val("API_HASH"))
     ttkbot.queue = queue
     ttkbot.start(bot_token=get_val("BOT_TOKEN"))
     logging.info("Telethon Client created.")
